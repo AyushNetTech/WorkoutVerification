@@ -5,6 +5,9 @@
     <title>Email Verified</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Lottie -->
+    <script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+
     <style>
       * {
         box-sizing: border-box;
@@ -31,9 +34,10 @@
         text-align: center;
       }
 
-      .icon {
-        font-size: 64px;
-        margin-bottom: 16px;
+      #lottie {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 12px;
       }
 
       h1 {
@@ -73,7 +77,9 @@
 
   <body>
     <div class="container">
-      <div class="icon">✅</div>
+      <!-- Lottie container -->
+      <div id="lottie"></div>
+
       <h1>Email Verified</h1>
 
       <p>
@@ -81,6 +87,7 @@
         You can now return to the app and sign in.
       </p>
 
+      <!-- Deep link -->
       <a class="button" href="myapp://">
         Open App
       </a>
@@ -90,5 +97,15 @@
         please open it manually from your device.
       </div>
     </div>
+
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById("lottie"),
+        renderer: "svg",
+        loop: false,
+        autoplay: true,
+        path: "https://assets2.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+      });
+    </script>
   </body>
 </html>
