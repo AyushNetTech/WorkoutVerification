@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Verified</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 360px;
+        padding: 24px;
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 64px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        color: #f4ff47;
+        margin-bottom: 12px;
+      }
+
+      p {
+        color: #ccc;
+        line-height: 1.5;
+        margin-bottom: 24px;
+      }
+
+      a.button {
+        display: inline-block;
+        width: 100%;
+        padding: 14px 0;
+        background-color: #f4ff47;
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 14px;
+        font-size: 16px;
+      }
+
+      a.button:active {
+        opacity: 0.85;
+      }
+
+      .note {
+        margin-top: 16px;
+        font-size: 13px;
+        color: #888;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="icon">✅</div>
+      <h1>Email Verified</h1>
+
+      <p>
+        Your email has been successfully verified.<br />
+        You can now return to the app and sign in.
+      </p>
+
+      <a class="button" href="myapp://">
+        Open App
+      </a>
+
+      <div class="note">
+        If the app does not open automatically,<br />
+        please open it manually from your device.
+      </div>
+    </div>
+  </body>
+</html>
